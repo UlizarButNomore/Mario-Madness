@@ -5,7 +5,7 @@ import openfl.utils.Assets;
 import lime.utils.Assets as LimeAssets;
 import lime.utils.AssetLibrary;
 import lime.utils.AssetManifest;
-#IF MODS_ALLOWED
+#if sys
 import sys.io.File;
 import sys.FileSystem;
 #else
