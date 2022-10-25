@@ -1,4 +1,4 @@
-#if LUA_ALLOWED
+#if sys
 import llua.Lua;
 import llua.LuaL;
 import llua.State;
