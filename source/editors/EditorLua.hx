@@ -19,7 +19,7 @@ import flixel.FlxSprite;
 import flixel.FlxCamera;
 import flixel.util.FlxColor;
 import flixel.FlxBasic;
-#IF MODS _ALLOWED
+#IF MODS_ALLOWED
 import sys.FileSystem;
 import sys.io.File;
 #end

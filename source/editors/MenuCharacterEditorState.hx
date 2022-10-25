@@ -26,7 +26,7 @@ import openfl.events.Event;
 import openfl.events.IOErrorEvent;
 import flash.net.FileFilter;
 import haxe.Json;
-#IF MODS _ALLOWED
+#IF MODS_ALLOWED
 import sys.io.File;
 #end
 
