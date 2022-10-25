@@ -2163,7 +2163,7 @@ class PlayState extends MusicBeatState
 
 		var songName:String = Paths.formatToSongPath(SONG.song);
 		var file:String = Paths.json(songName + '/events');
-		#IF MODS _ALLOWED
+		#if sys
 		if (FileSystem.exists(Paths.modsJson(songName + '/events')) || FileSystem.exists(file)) {
 		#else
 		if (OpenFlAssets.exists(file)) {
