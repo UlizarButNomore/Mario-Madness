@@ -27,7 +27,7 @@ import openfl.events.IOErrorEvent;
 import flash.net.FileFilter;
 import lime.system.Clipboard;
 import haxe.Json;
-#IF MODS_ALLOWED
+#if sys
 import sys.io.File;
 import sys.FileSystem;
 #end
