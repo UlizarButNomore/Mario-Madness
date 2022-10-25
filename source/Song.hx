@@ -5,7 +5,7 @@ import haxe.Json;
 import haxe.format.JsonParser;
 import lime.utils.Assets;
 
-#IF MODS _ALLOWED
+#IF MODS_ALLOWED
 import sys.io.File;
 import sys.FileSystem;
 #end
@@ -66,7 +66,7 @@ class Song
 		#end
 
 		if(rawJson == null) {
-			#IF MODS _ALLOWED
+			#if MODS _ALLOWED
 			rawJson = File.getContent(Paths.json(formattedFolder + '/' + formattedSong)).trim();
 			#else
 			rawJson = Assets.getText(Paths.json(formattedFolder + '/' + formattedSong)).trim();
