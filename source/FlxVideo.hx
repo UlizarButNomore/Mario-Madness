@@ -1,4 +1,4 @@
-#if web
+#IF MODS _ALLOWED#if web
 import openfl.net.NetConnection;
 import openfl.net.NetStream;
 import openfl.events.NetStatusEvent;
