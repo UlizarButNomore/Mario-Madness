@@ -20,7 +20,7 @@ import flixel.FlxBasic;
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import openfl.display.BlendMode;
-#IF MODS_ALLOWED
+#if sys
 import sys.FileSystem;
 import sys.io.File;
 #end
