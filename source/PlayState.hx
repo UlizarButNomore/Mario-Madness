@@ -1310,20 +1310,7 @@ class PlayState extends MusicBeatState
 		// startCountdown();
 
 		generateSong(SONG.song);
-		#if LUA_ALLOWED
-		for (notetype in noteTypeMap.keys()) {
-			var luaToLoad:String = Paths.modFolders('custom_notetypes/' + notetype + '.lua');
-			if(FileSystem.exists(luaToLoad)) {
-				luaArray.push(new FunkinLua(luaToLoad));
-			}
-		}
-		for (event in eventPushedMap.keys()) {
-			var luaToLoad:String = Paths.modFolders('custom_events/' + event + '.lua');
-			if(FileSystem.exists(luaToLoad)) {
-				luaArray.push(new FunkinLua(luaToLoad));
-			}
-		}
-		#end
+
 		noteTypeMap.clear();
 		noteTypeMap = null;
 		eventPushedMap.clear();
