@@ -29,7 +29,7 @@ import DialogueBoxPsych;
 import flixel.FlxCamera;
 import flixel.group.FlxSpriteGroup;
 import lime.system.Clipboard;
-#IF MODS_ALLOWED
+#if sys
 import sys.io.File;
 #end
 
