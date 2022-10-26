@@ -27,7 +27,7 @@ import flash.net.FileFilter;
 import haxe.Json;
 import DialogueBoxPsych;
 import lime.system.Clipboard;
-#IF MODS_ALLOWED
+#if sys
 import sys.io.File;
 #end
 
