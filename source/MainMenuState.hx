@@ -397,6 +397,10 @@ class MainMenuState extends MusicBeatState
 				smOpen = false;
 				FlxG.sound.play(Paths.sound('abrirsm'));
 				submenu.animation.play('cerrar');
+					
+		#if android 
+		addVirtualPad(NONE, B);
+		#end
 				}
 		}
 
