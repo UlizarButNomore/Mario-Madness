@@ -85,6 +85,8 @@ abstract Action(String) to String from String
 	var RESET = "reset";
 }
 #end
+	
+
 
 enum Device
 {
@@ -395,8 +397,8 @@ class Controls extends FlxActionSet
 		setKeyboardScheme(scheme, false);
 	}
 	#end
-		
-public var trackedinputs:Array<FlxActionInput> = [];
+	
+       public var trackedinputs:Array<FlxActionInput> = [];
 
 	public function addbutton(action:FlxActionDigital, button:FlxButton, state:FlxInputState) {
 		var input = new FlxActionInputDigitalIFlxInput(button, state);
@@ -608,8 +610,7 @@ public var trackedinputs:Array<FlxActionInput> = [];
 	//nothing
 	}
 	#end
-		
-		
+
 	override function update()
 	{
 		super.update();
