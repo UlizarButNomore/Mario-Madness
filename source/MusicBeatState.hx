@@ -18,16 +18,7 @@ import flixel.FlxBasic;
 class MusicBeatState extends FlxUIState
 {
 
-	}
 
-	override function destroy() {
-		controls.removeFlxInput(trackedinputs);
-
-		super.destroy();
-	}
-	#else
-	public function addVirtualPad(?DPad, ?Action){};
-	#end
 		
 	private var lastBeat:Float = 0;
 	private var lastStep:Float = 0;
