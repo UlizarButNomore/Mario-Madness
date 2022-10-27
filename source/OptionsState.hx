@@ -72,6 +72,9 @@ class OptionsState extends MusicBeatState
 		changeSelection();
 
 		super.create();
+		#if android 
+		addVirtualPad(LEFT_RIGHT, B);
+		#end
 	}
 
 	override function closeSubState() {
