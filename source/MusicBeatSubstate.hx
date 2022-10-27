@@ -9,16 +9,7 @@ import flixel.FlxSprite;
 class MusicBeatSubstate extends FlxSubState
 {
 
-	}
-
-	override function destroy() {
-		controls.removeFlxInput(trackedinputs);
-
-		super.destroy();
-	}
-	#else
-	public function addVirtualPad(?DPad, ?Action){};
-	#end					 
+ 
 	public function new()
 	{
 		super();
